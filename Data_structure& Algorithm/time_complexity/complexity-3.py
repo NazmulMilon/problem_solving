@@ -1,3 +1,6 @@
+#Time Complexity== O(n*n + n)= O(n*n) or square of n
+
+
 n=int(input("Enter a number:"))
 
 count=0
