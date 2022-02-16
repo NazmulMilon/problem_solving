@@ -1,3 +1,9 @@
+'''import calendar
+
+def is_leap(year):
+    return calendar.isleap(year)
+'''
+
 def is_leap(year):
     leap = False
 
