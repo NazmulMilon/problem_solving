@@ -1,5 +1,25 @@
+pos=-1
+def search(list, n):
+    i=0
+    while i<len(list):
+        if list[i]==n:
+            globals()['pos']=i
+            return True
+        i=i+1
+    return False
 
-lst=[]
+
+list = [5,6,9,75,88]
+n=75
+
+if search(list, n):
+    print("Found at", pos+1)
+else:
+    print("Not Found")
+
+
+
+'''lst=[]
 num=int(input("Enter the size of list: \t"))
 
 for n in range(num):
@@ -20,7 +40,7 @@ for i in range(len(lst)):
 
 if not found:
     print(" %d Elements not found in the list" %x)
-
+'''
 
 
 '''def linear_search(array, n ,x):
@@ -31,7 +51,7 @@ if not found:
 
 array=[2, 15, 16, 14, 9, 0]
 x=int(input("Enter the finding number: "))
-#x=15
+#x=15`
 n=len(array)
 result=linear_search(array, n, x)
 if result==-1:
