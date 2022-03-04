@@ -1,6 +1,7 @@
 import unittest
 from unittest_example import add, is_even
 
+
 class MyTest(unittest.TestCase):
 
     def test_add(self):
