@@ -1,4 +1,4 @@
-a = int(input("Enter the first number: "))
+'''a = int(input("Enter the first number: "))
 b = int(input("Enter the second number: "))
 mul=a*b
 
@@ -16,10 +16,27 @@ print("GCD is: ", a)
 
 lcm=mul//a
 print("LCM is: ",  lcm)
+'''
 
 
+'''def compute_gcd(x, y):
+    while(y):
+        x, y = y, x % y
+        return x
 
-'''def compute_lcm(x, y):
+
+# This function computes LCM
+def compute_lcm(x, y):
+    lcm = (x*y)//compute_gcd(x,y)
+    return lcm
+
+
+num1 = 54
+num2 = 24
+print("The L.C.M. is", compute_lcm(num1, num2))
+'''
+
+def compute_lcm(x, y):
     # choose the greater number
     if x > y:
        greater = x
@@ -37,4 +54,3 @@ print("LCM is: ",  lcm)
 num1 = 54
 num2 = 24
 print("The L.C.M. is", compute_lcm(num1, num2))
-'''
