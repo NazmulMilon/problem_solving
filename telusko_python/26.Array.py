@@ -8,18 +8,12 @@ while i<len(newArray):
     print(newArray[i], end=' ')
     i+=1
 
-
-
-
-
 '''vals.reverse()
 # print(vals)
 # print(vals.buffer_info())
 print(vals)
 print(vals[1])
 '''
-
-
 
 '''for e in vals:
     print(e, end=' ')'''
@@ -29,7 +23,8 @@ print(vals[1])
 
 
 '''for i in range(5):
-    print(vals[i], end=' ')'''
+    print(vals[i], end=' ')
+    '''
 
 '''
 vals = array('i', [4, 5, 2, 7, 7, 8])
