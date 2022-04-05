@@ -22,4 +22,4 @@ class Dog:
 
 Rodger = Dog("pug")
 Rodger.setColor("brown")
-print(Rodger.getColor()) 
+print(Rodger.getColor())
