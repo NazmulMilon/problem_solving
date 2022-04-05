@@ -9,6 +9,7 @@ print(arr)
 '''
 
 '''
+# using logspace
 # arr= logspace(1, 40, 5)
 # print(arr)
 arr = logspace(1, 40, 5)
@@ -16,8 +17,9 @@ print('%.2f' %arr[2])
 '''
 
 '''
+# using arange
 # arr= arange(1, 20, 3)
-#arr=arange(1, 20, 2)
+arr=arange(1, 20, 2)
 print(arr)
 '''
 
