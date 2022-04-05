@@ -1,16 +1,29 @@
 from numpy import *
 
-# Shallow copy
+# deep copy
 arr1 = array([2, 3, 4, 6])
-arr2 = arr1.view()
+arr2 = arr1.copy()
 
-arr1[1] =15
+arr1[1] =9
+
 print(arr1)
 print(arr2)
 
 print(id(arr1))
 print(id(arr2))
 
+'''# Shallow copy
+arr1 = array([2, 3, 4, 6])
+arr2 = arr1.view()
+
+arr1[1] =15
+
+print(arr1)
+print(arr2)
+
+print(id(arr1))
+print(id(arr2))
+'''
 '''arr1 = array([5, 3, 6, 9, 4])
 arr2 = array([9, 2, 4, 6, 9])
 print(concatenate([arr1, arr2]))
