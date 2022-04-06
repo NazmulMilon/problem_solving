@@ -1,11 +1,20 @@
 from numpy import *
 
+m1 = matrix('2 3 4; 5 6 5; 7 8 9 ')
+m2 = matrix('1 2 3; 6 8 5; 2 6 7 ')
 
-# m = matrix('2 3 4; 5 6 5; 7 8 9 ')
-m = matrix('2 3; 4 5; 6 5; 7 8')
+m3 = m1 * m2
+print(m3)
+
+'''
+m = matrix('2 3 4; 5 6 5; 7 8 0 ')
+#m = matrix('2 3; 4 5; 6 5; 7 8')
 
 
-print(m)
+print(diagonal(m))
+print(m.min())
+print(m.max())
+'''
 
 '''
 arr1 = array([
