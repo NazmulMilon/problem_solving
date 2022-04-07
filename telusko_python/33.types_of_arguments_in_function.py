@@ -1,4 +1,10 @@
+# default argument
+def person(name, age=15):
+    print(name, age)
 
+
+person('nazmul')
+#person('nazmul', 25)
 
 '''
 # keyword arguments
