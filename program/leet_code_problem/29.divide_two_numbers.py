@@ -19,7 +19,7 @@ class Solution(object):
 obj = Solution()
 # result = obj.divide(dividend, divisor)
 obj.result_view()
-
+print()
 
 '''
 class Test:
