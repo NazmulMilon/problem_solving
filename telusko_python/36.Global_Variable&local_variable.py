@@ -10,6 +10,8 @@ def local_variable():
 
     print('local:', a)
 
+    globals()['a'] = 25
+
 
 local_variable()
 
