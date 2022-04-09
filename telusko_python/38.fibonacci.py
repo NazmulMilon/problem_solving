@@ -1,3 +1,6 @@
+# assignment-- if I enter -3 what will be output
+'''assignment-2:: If I enter 100 don't print all the numbers print the last
+number which is less than 100'''
 n = int(input("Enter a number: "))
 
 
