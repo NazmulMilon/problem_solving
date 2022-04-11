@@ -1,11 +1,24 @@
 from functools import reduce
 
+nums = [3, 4, 6, 8, 4, 6, 2, 9]
+
+evens = list(filter(lambda n: n%2==0, nums))
+
+doubles = list(map(lambda n: n*2, evens))
+print(doubles)
+
+sum = reduce(lambda a,b : a+b, doubles)
+print(sum)
+
+
+'''
+# reduce function using lambda
 nums = [2, 4, 8, 25, 13, 48]
 
 sum = reduce(lambda a,b : a+b, nums)
 print(nums)
 print(sum)
-
+'''
 
 '''# reduce function
 def add_all(a, b):
