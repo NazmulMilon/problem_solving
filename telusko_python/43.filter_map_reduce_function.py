@@ -1,10 +1,27 @@
+from functools import reduce
 
-# map function using lambda
+
+
+
+'''# reduce function
+def add_all(a, b):
+    return a+b
+
+nums = [2, 4, 8, 25, 13, 98]
+
+sum = reduce(add_all, nums)
+
+print(nums)
+print(sum)
+'''
+
+
+'''# map function using lambda
 
 nums = [22, 4, 5, 7, 8, 6]
 
 double = list(map(lambda n: n*2, nums))
-print(double)
+print(double)'''
 
 '''#map function
 def update(n):
