@@ -1,5 +1,12 @@
 
-#map function
+# map function using lambda
+
+nums = [22, 4, 5, 7, 8, 6]
+
+double = list(map(lambda n: n*2, nums))
+print(double)
+
+'''#map function
 def update(n):
     return n*2
 
@@ -9,6 +16,8 @@ nums = [2, 3, 5, 4, 6]
 double = list(map(update, nums))
 
 print(double)
+'''
+
 
 
 '''# filter function using lambda function
@@ -17,6 +26,7 @@ nums = [12, 34, 11, 14, 65, 78]
 evens = list(filter(lambda n:n%2==0, nums))
 print(evens)
 '''
+
 
 # filter function
 '''def is_even(n):
