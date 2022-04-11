@@ -1,7 +1,14 @@
 
 #map function
+def update(n):
+    return n*2
 
 
+nums = [2, 3, 5, 4, 6]
+
+double = list(map(update, nums))
+
+print(double)
 
 
 '''# filter function using lambda function
