@@ -1,6 +1,10 @@
 from functools import reduce
 
+nums = [2, 4, 8, 25, 13, 48]
 
+sum = reduce(lambda a,b : a+b, nums)
+print(nums)
+print(sum)
 
 
 '''# reduce function
