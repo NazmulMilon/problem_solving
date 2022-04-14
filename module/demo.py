@@ -1,4 +1,4 @@
-
+import module2
 '''from module import *
 a = 7
 b = 5
@@ -31,3 +31,11 @@ print(c3)
 
 c4 = div(a, b)
 print(c4)
+
+
+
+a = 100
+b = 8
+
+d = module2.mul(a, b)
+print(d)
