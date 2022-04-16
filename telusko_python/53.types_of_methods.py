@@ -11,10 +11,13 @@ class Student:
     def avg(self):
         return (self.m1 + self.m2 + self.m3)/3
 
-
     @classmethod
     def getSchool(cls):
         return cls.school
+
+    @staticmethod
+    def info():
+        print("This is Student Class...in abc module")
 
 
 s1 = Student(34, 47, 32)
@@ -25,3 +28,5 @@ print(s2.avg())
 
 
 print(Student.getSchool())
+
+Student.info()
