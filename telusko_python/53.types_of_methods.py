@@ -12,6 +12,10 @@ class Student:
         return (self.m1 + self.m2 + self.m3)/3
 
 
+    @classmethod
+    def getSchool(cls):
+        return cls.school
+
 
 s1 = Student(34, 47, 32)
 s2 = Student(89, 32, 12)
@@ -20,3 +24,4 @@ print(s1.avg())
 print(s2.avg())
 
 
+print(Student.getSchool())
