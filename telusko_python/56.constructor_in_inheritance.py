@@ -28,9 +28,14 @@ class C(A, B):
         super().__init__() # Method Resolution Order(MRO): When multiple inheritance it start to execute left to right
         print("in C Init")
 
+    def feat(self):
+        super().feature2() # for calling super class method
+
 
 a1 = C()
 a1.feature1()
+
+a1.feat()
 
 '''
 # Constructor in Inheritance
