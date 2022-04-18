@@ -1,5 +1,26 @@
-
 lst = []
+
+n = int(input("Enter the range: "))
+lst = list(map(int, input("Enter the elements; "). split()))[:n]
+item = int(input("Enter the item: "))
+
+
+def linear_search(lst, n, item):
+    for i in range(0, n):
+        if lst[i]==item:
+            return i
+    else:
+        return -1
+
+
+result = linear_search(lst, n, item)
+if result==-1:
+    print("Not Found")
+else:
+    print("Found at: ", result+1)
+
+
+'''lst = []
 n = int(input("Enter the range: "))
 
 lst = list(map(int,input("Enter the elements: ").split()))[:n]
@@ -20,7 +41,7 @@ if index ==-1:
     print("Item not found")
 else:
     print("Item found at: ", index+1)
-
+'''
 
 '''# linear search function
 def linear_search(arr, n, item):
