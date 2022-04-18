@@ -1,3 +1,35 @@
+'''lst = []
+n = int(input("Enter the range: "))
+element = list(map(int, input("Enter the Range: ").split()))[:n]
+r = int(input("Enter the item: "))
+'''
+
+lst = [11, 22, 33, 44, 55]
+r = 33
+
+
+def binary_search(lst, r):
+    lower = 0
+    upper = len(lst) - 1
+    mid = (lower + upper) // 2
+    for i in range(len(lst)):
+        if lst[i] == r:
+            return i
+
+        elif lst[i] >= r:
+            upper = mid
+        else:
+            lower = mid+1
+    else:
+        return -1
+
+
+index = binary_search(lst, r)
+
+if index == -1:
+    print("Not Found")
+else:
+    print("Found at: ", index)
 
 
 '''pos=-1
