@@ -1,9 +1,11 @@
-lst = []
-n = int(input("Enter the range of list: "))
 
-lst = list(map(int, input(" Enter number: ").split()))[:n]
-# lst = list(map(int, input("Enter the elements: ").strip().split()))[:-n]
+lst = []
+n = int(input("Enter the range of elements: "))
+
+lst = list(map(int, input("Enter the elements: ").split()))[:n]
+# lst = list(map(int, input("Enter the elements: ").strip().split())).[:n]
 print(lst)
+
 
 
 ''''# number of elements

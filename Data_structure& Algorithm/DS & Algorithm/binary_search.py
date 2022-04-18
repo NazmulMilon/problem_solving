@@ -1,5 +1,6 @@
-pos=-1
 
+
+'''pos=-1
 
 def binary_search(list, n):
     l=0
@@ -23,3 +24,4 @@ if binary_search(list, n):
     print("Found at: ", pos+1)
 else:
     print("Not found")
+'''
