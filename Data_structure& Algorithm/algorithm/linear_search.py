@@ -1,4 +1,36 @@
-pos=-1
+
+# linear search function
+
+
+def linear_search(arr, n, item):
+    for i in range(0, n):
+        if arr[i]==item:
+            return i
+    else:
+        return -1
+
+
+arr=[]
+n = int(input("Enter the size of array: "))
+
+for i in range(0, n):
+    a = int(input("Elements of array: "))
+    arr.append(a)
+
+item = int(input("Enter the index number: "))
+
+
+index = linear_search(arr, n, item)
+if index == -1:
+    print("Array Not Found")
+
+else:
+    print("Number found at: ", index+1)
+
+
+
+
+'''pos=-1
 def search(list, n):
     i=0
     while i<len(list):
@@ -16,7 +48,7 @@ if search(list, n):
     print("Found at", pos+1)
 else:
     print("Not Found")
-
+'''
 
 
 '''lst=[]
