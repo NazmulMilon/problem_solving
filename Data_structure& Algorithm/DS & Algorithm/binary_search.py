@@ -7,9 +7,11 @@ for i in range(n):
 
 r = int(input("Finding number: "))
 
+
 def binary_search(lst, r):
     lower = 0
-    upper =len(lst)-1
+    upper = len(lst)-1
+    # upper = n-1
     mid = (lower+upper)//2
 
     for i in range(len(lst)):
