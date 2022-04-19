@@ -1,4 +1,9 @@
-lst =[]
+
+
+
+
+
+'''lst =[]
 n= int(input("Enter the range: "))
 
 for i in range(n):
@@ -30,6 +35,43 @@ if result==-1:
 
 else:
     print("Found at: ", result+1)
+'''
+
+
+lst =[]
+n= int(input("Enter the range: "))
+
+for i in range(n):
+    item = int(input("Enter the number: "))
+    lst.append(item)
+
+r = int(input("Finding number: "))
+
+
+def binary_search(lst, r):
+    lower = 0
+    # upper = len(lst)-1
+    upper = n-1
+    # mid = (lower+upper)//2
+
+    for i in range(len(lst)):
+        mid = (lower + upper) // 2
+        if lst[mid]==r:
+            return mid
+        elif lst[mid]>r:
+            upper = mid-1
+        else:
+            lower = mid+1
+
+
+result = binary_search(lst, r)
+
+if result==-1:
+    print("Not Found")
+
+else:
+    print("Found at: ", result+1)
+
 
 '''n = int(input("Enter the range: "))
 e = list(map(int, input("Enter the items: ").split()))[:n]
