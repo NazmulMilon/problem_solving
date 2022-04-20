@@ -1,4 +1,4 @@
-from collections import deque
+from collections import *
 
 bank = deque(['Milon', 'Nazmul', 'Bijoy'])
 

@@ -1,7 +1,25 @@
 
+lst = [10, 34, 24, 92, 4, 103]
+
+def selection_sort(lst):
+    for i in range(len(lst)):
+        min=i
+        for j in range(i, len(lst)):
+            # min=i
+            if lst[j]<lst[min]:
+                min=j
+
+        temp = lst[i]
+        lst[i] = lst[min]
+        lst[min] = temp
+
+selection_sort(lst)
+print(lst)
 
 
 
+
+'''
 lst = [9, 3, 12, 54, 22, 55]
 
 def selection_sort(lst):
@@ -19,7 +37,7 @@ def selection_sort(lst):
 
 selection_sort(lst)
 print(lst)
-
+'''
 
 
 '''def sort(nums):
