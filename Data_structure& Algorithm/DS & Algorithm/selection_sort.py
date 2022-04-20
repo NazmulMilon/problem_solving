@@ -1,4 +1,20 @@
+lst = list(map(int, input("Enter the numbers: ").split()))
 
+def selection_sort(lst):
+    for i in range(len(lst)):
+        minpos=i
+        for j in range(i, len(lst)):
+            if lst[j]<lst[minpos]:
+                minpos=j
+
+        lst[i], lst[minpos] = lst[minpos], lst[i]
+
+
+selection_sort(lst)
+print(lst)
+
+
+'''
 lst = [10, 34, 24, 92, 4, 103]
 
 def selection_sort(lst):
@@ -15,8 +31,7 @@ def selection_sort(lst):
 
 selection_sort(lst)
 print(lst)
-
-
+'''
 
 
 '''
