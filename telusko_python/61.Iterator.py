@@ -19,6 +19,7 @@ class TopTen:
 
 values = TopTen()
 
+# print(next(values))
 
 for i in values:
     print(i)
