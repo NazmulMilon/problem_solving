@@ -1,5 +1,24 @@
+'''#code_basics
 
 
+def insertion_sort(arr):
+    for i in range(1, len(elements)):
+        anchor = elements[i]
+        j=i-1
+        while j>=0 and anchor<elements[j]:
+            elements[j+1] = elements[j]
+            j=j-1
+        elements[j+1] = anchor
+
+
+elements = [11, 9, 29, 7, 2, 15, 28]
+
+insertion_sort(elements)
+print(elements)
+'''
+
+'''
+# FelixTechTips (youtube channel)
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         j=i
@@ -12,6 +31,7 @@ arr = [23, 2, 1, 76, 8, 19, 90, 80]
 
 insertion_sort(arr)
 print(arr)
+'''
 
 '''def insertion_sort(arr):
     for i in range(1, len(arr)):
