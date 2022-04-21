@@ -1,4 +1,5 @@
 
+'''
 # bubble sort in efficient way
 
 def bubble_sort(lst):
@@ -17,9 +18,21 @@ def bubble_sort(lst):
 lst = list(map(int,input("Enter the number of elements: ").split()))
 
 bubble_sort(lst)
-print(lst)
+print(lst)'''
 
 
+def bubble_sort(nums):
+    for i in range(len(nums)-1, 0, -1):
+        for j in range(i):
+            if nums[j]>nums[j+1]:
+                temp = nums[j]
+                nums[j] = nums[j+1]
+                nums[j+1] = temp
+
+
+nums = [10, 45, 6, 7, 111, 4, 2, 96]
+bubble_sort(nums)
+print(nums)
 
 '''
 # bubble sort in different way
