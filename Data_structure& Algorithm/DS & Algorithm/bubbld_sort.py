@@ -1,5 +1,28 @@
 
+# bubble sort in efficient way
 
+def bubble_sort(lst):
+    for i in range(len(lst)-1):
+        swapped = False
+        for j in range(len(lst)-1-i):
+            if lst[j]>lst[j+1]:
+                temp = lst[j]
+                lst[j]=lst[j+1]
+                lst[j+1]=temp
+                swapped = True
+        if not swapped:
+            break
+
+
+lst = list(map(int,input("Enter the number of elements: ").split()))
+
+bubble_sort(lst)
+print(lst)
+
+
+
+'''
+# bubble sort in different way
 def bubble_sort(lst):
     arr = len(lst)
     for i in range(arr-1):
@@ -14,9 +37,11 @@ lst = list(map(int,input("Enter numbers: ").split()))
 
 bubble_sort(lst)
 print(lst)
+'''
 
-
-'''def bubble_sort(arr):
+'''
+# bubble sort in another way
+def bubble_sort(arr):
     for i in range(len(arr)-1):
         for j in range(len(arr)-1-i):
             if arr[j]>arr[j+1]:
@@ -33,6 +58,7 @@ print(arr)
 '''
 
 '''
+# bubble sort in simple way
 def bubble_sort(lst):
 
     for i in range(len(lst)):
