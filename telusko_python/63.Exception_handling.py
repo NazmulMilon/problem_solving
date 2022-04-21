@@ -1,4 +1,25 @@
-# another Way to handle exception using specific exceptions name
+# exception handling using specific exceptions name
+a=5
+b=2
+
+try:
+    print("Program Open")
+    print(a/b)
+    k = int(input("Enter a number: "))
+    print(k)
+
+except ZeroDivisionError as e:
+    print("Divisble is not possible by 0")
+except ValueError as e:
+    print("Input value is wrong", e)
+except Exception as e:
+    print("Something went wrong..")
+finally:
+    print("Program done")
+
+
+
+'''# another Way to handle exception using specific exceptions name
 a=5
 b=2
 
@@ -19,7 +40,7 @@ except Exception as e:
 
 finally:
     print("resource closed.")
-
+'''
 
 '''# another Way to handle exception using finally
 a=5
