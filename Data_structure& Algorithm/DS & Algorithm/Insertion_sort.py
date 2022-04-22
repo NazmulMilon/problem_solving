@@ -1,5 +1,34 @@
-'''#code_basics
 
+# FelixTechTips (youtube channel)
+def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        j=i
+        while arr[j-1]>arr[j] and j>0:
+            arr[j-1], arr[j] = arr[j], arr[j-1]
+            j-=1
+
+
+tests = [
+    [23, 2, 1, 76, 8, 19, 90, 80],
+    [90, 23, 0, 15, 9],
+    [88, 15, 31, 29, 11, 5],
+    [1],
+    [0]
+]
+
+arr = [23, 2, 1, 76, 8, 19, 90, 80]
+
+for kk in tests:
+    insertion_sort(kk)
+    print(kk)
+
+
+insertion_sort(arr)
+print(arr)
+
+
+
+'''#code_basics
 
 def insertion_sort(arr):
     for i in range(1, len(elements)):
