@@ -50,6 +50,23 @@ class LinkedList:
 
         return count
 
+    def remove_at(self, index):
+        if index<0 or index>=self.get_length():
+            raise Exception("Invalid Index")
+
+        if index==0:
+            self.head = self.head.next
+            return
+
+        count = 0
+        itr = self.head
+        while itr:
+            if count == index - 1:
+                itr.next = itr.next.next
+                break
+            itr = itr.next
+            count +=1
+
 
 if __name__ == '__main__':
     ll = LinkedList()
@@ -57,5 +74,6 @@ if __name__ == '__main__':
     '''ll.insert_at_end(89)
     ll.insert_at_begining(5)
     ll.insert_at_end(105)'''
+    ll.remove_at(2)
     ll.print()
     print("Length: ",ll.get_length())
