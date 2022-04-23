@@ -65,7 +65,7 @@ class LinkedList:
                 itr.next = itr.next.next
                 break
             itr = itr.next
-            count +=1
+            count += 1
 
 
 if __name__ == '__main__':
