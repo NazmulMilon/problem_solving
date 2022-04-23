@@ -36,10 +36,16 @@ class LinkedList:
 
         itr.next = Node(data, None)
 
+    def insert_values(self, data_list):
+        self.head = None
+        for data in data_list:
+            self.insert_at_end(data)
+
 
 if __name__ == '__main__':
     ll = LinkedList()
+    ll.insert_values(['Nazmul', 'Hasan', 'Milon', 'Rupol'])
+    '''ll.insert_at_end(89)
     ll.insert_at_begining(5)
-    ll.insert_at_begining(89)
-    ll.insert_at_end(105)
+    ll.insert_at_end(105)'''
     ll.print()
