@@ -97,4 +97,6 @@ if __name__ == '__main__':
     ll.insert_at(0, 'Milu')
     ll.insert_at(4, 'Ahmed')
     ll.print()
+    ll.remove_at(3)
+    ll.print()
     # print("Length: ",ll.get_length())
