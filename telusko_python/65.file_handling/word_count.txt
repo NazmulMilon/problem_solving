@@ -1,0 +1,8 @@
+Wordcount: 2 Hello Milon!
+Wordcount: 10 Are you want to be a programmer or software Engineer?
+Wordcount: 10 It's not easy to become a programmer or software engineer.
+Wordcount: 9 You have to work hard to become a programmer
+Wordcount: 9 I am a slow walker ubt not get back.
+Wordcount: 4 I have a dream.
+Wordcount: 3 Marking luther king
+Wordcount: 1 
