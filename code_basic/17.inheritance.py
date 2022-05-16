@@ -1,0 +1,43 @@
+
+class Vehicle:
+    def general_usage(self):
+        print("general use: transportation")
+
+
+class Car(Vehicle):
+    def __init__(self):
+        print("I'm car")
+        self.wheels = 4
+        self.has_roof = True
+
+    def specific_usage(self):
+        self.general_usage()
+        print("Specific use: commute to work, vacation with family")
+
+
+class Motorcycle(Vehicle):
+    def __init__(self):
+        def __init__(self):
+            print("I'm Motorcycle")
+            self.wheels = 2
+            self.has_roof = False
+
+    def specific_usage(self):
+        self.general_usage()
+        print("Specific use: road trip, racing")
+
+
+'''c = Car()
+#c.general_usage()
+c.specific_usage()
+
+m = Motorcycle()
+# m.general_usage()
+m.specific_usage()
+'''
+
+c = Car()
+m = Motorcycle()
+
+print(isinstance(c,Car))
+print(issubclass(Car, Motorcycle))
