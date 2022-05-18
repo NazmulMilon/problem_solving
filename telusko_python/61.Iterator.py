@@ -33,6 +33,7 @@ print(it.__next__())
 
 print(next(it)) # another way of calling the next value
 
-for i in lst:
+'''
+'''for i in lst:
     print(i)
     # print(i, end=" ")'''
