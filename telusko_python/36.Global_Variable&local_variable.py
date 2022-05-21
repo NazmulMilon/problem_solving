@@ -4,7 +4,7 @@ print(id(a))
 
 
 def local_variable():
-    a=20
+    # a=20
     x = globals()['a']
     print(id(x))
 
