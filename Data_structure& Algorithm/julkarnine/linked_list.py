@@ -53,7 +53,6 @@ class DoubleLinkedList:
         if self.tail is not None:
             self.__remove_node(self.tail)
 
-
     def __str__(self):
         vals = []
         node = self.head
