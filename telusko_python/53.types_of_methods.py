@@ -17,7 +17,7 @@ class Student:
 
     @staticmethod
     def info():
-        print("This is Student Class...in abc module")
+        print("This is Student Class...in abc 45.module")
 
 
 s1 = Student(34, 47, 32)
