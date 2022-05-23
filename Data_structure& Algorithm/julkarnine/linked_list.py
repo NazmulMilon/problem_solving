@@ -61,7 +61,7 @@ class DoubleLinkedList:
             node = node.next
         return f"[{', '.join(str(val) for val in vals)}]"
 
-
+ 
 my_list = DoubleLinkedList()
 my_list.add(1)
 my_list.add(5)
