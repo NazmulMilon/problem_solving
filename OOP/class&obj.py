@@ -29,3 +29,5 @@ print(a_person.get_summary())
 
 print(a_person.date_of_birth) #this case there will no bracket (). because
                                 #bracket indicate that it's a function.
+a_person.set_name("0Nazmul")
+print(a_person.name)
