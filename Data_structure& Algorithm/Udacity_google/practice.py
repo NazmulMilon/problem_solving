@@ -35,7 +35,8 @@ def merge_two_sorted_lists(a, b, arr):
         j += 1
         k += 1
 
+
 if __name__ == '__main__':
-    arr = [10, 103, 5, 9, 44, 1, 91]
+    arr = [21, 4, 1, 3, 9, 20, 25]
     merge_sort(arr)
     print(arr)

@@ -1,3 +1,4 @@
+# this code will take less spaces for that reason this need less spaces.
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -37,7 +38,7 @@ def merge_two_sorted_lists(a, b, arr):
 
 if __name__ == '__main__':
     test_cases = [
-        [10, 3, 15, 7, 8, 23, 98, 29],
+        [21, 4, 1, 3, 9, 20, 25],
         [],
         [3],
         [9, 8, 7, 2],
